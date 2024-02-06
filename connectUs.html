@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top .bottom {
+            height: 150px;
+            background-color: bisque;
+        }
+
+        .top img {
+            width: 100%;
+            height: 150px;
+        }
+
+        .bottom {
+            background-color: rgb(137, 137, 213);
+            width: 100%;
+            height: 150px;
+        }
+
+        .bottom ul {
+            margin-top: 20px;
+            padding-top: 20px;
+            text-align: center;
+            /* 文本居中 */
+            font-family: Arial, sans-serif;
+            /* 设置字体 */
+            font-size: 22px;
+            /* 设置字号 */
+            font-weight: bold;
+            /* 设置加粗 */
+            color: white;
+        }
+
+        .box {
+
+            display: flex;
+            justify-content: center;
+            /* 在主轴上居中 */
+            align-items: center;
+            /* 在交叉轴上居中 */
+            height: 100vh;
+            /* 用于垂直居中 */
+        }
+
+        .connect {
+            background-image: url("img/connectusbgc.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 21px solid rgb(104, 119, 126);
+            width: 800px;
+            height: 600px;
+            top: 150px;
+            left: 580px;
+        }
+
+        .connect label {
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        menu {
+            list-style-type: none;
+
+        }
+
+        li:hover {
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+        }
+
+        #bottom {
+            width: 100%;
+            height: 90px;
+            background-color: cadetblue;
+            margin: 10px auto;
+        }
+
+        #mainmenu {
+            grid-area: menubar;
+            margin-bottom: 0;
+            padding: 10px;
+        }
+
+        #mainmenu>li {
+            background-color: #ffffff;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        #mainmenu>li::before {
+            content: " | ";
+        }
+
+        #mainmenu>li:first-of-type::before {
+            content: "";
+        }
+
+        #mainmenu menu {
+            display: none;
+            background: #eee;
+            position: absolute;
+        }
+
+        #mainmenu>li:hover menu {
+            display: block;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #mainmenu>li menu li:hover {
+            background: #efe;
+        }
+
+        #mainmenu>li menu li a {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <img src="img\top2.png" alt="">
+    </div>
+    <menu id="mainmenu">
+        <li>
+            <a href="pictureBookWebsite.php">Home</a>
+        </li>
+        <li id="comments">
+            <a href="comment.php">Comments</a>
+        </li>
+        <li>
+            <a href="connectUs.html">Connect Us</a>
+        </li>
+    </menu>
+    <div class="box">
+        <div class="connect" align="center">
+            <br><br><br><br>
+            <h1>
+                <center>Connect us</center>
+            </h1><br /><br><br /><br>
+            <label for="email">My Email:jannyguojia@gmail.com</label><br><br><br><br>
+
+
+            <label for="something">If you have any questions please contact us. </label><br /><br>
+
+            <label for="something2">Or if you have any good picture books or
+                storybooks, please send them to
+                us.</label><br /><br>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <ul>
+            <li>Made by JiaGuo</li>
+            <li>To my son and other kids</li>
+        </ul>
+    </div>
+</body>
+
+</html>

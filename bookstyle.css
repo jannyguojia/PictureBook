@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top .bottom {
+    height: 150px;
+    background-color: bisque;
+}
+
+.top img {
+    width: 100%;
+    height: 150px;
+}
+
+.bottom {
+    background-color: rgb(137, 137, 213);
+    width: 100%;
+    height: 150px;
+}
+
+.bottom ul {
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    /* 文本居中 */
+    font-family: Arial, sans-serif;
+    /* 设置字体 */
+    font-size: 22px;
+    /* 设置字号 */
+    font-weight: bold;
+    /* 设置加粗 */
+    color: white;
+    /* 设置字体颜色为白色 */
+}
+
+.box {
+    overflow: hidden;
+    width: 1478px;
+    height: 1230px;
+    margin: 10px auto;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+.left {
+    float: left;
+    width: 234px;
+    height: 930px;
+
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+}
+
+.left :hover {
+    border: 10px dotted cyan;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 五列布局 */
+    width: 1240px;
+    /* height: 615px; */
+    background-color: #f5f5f5;
+}
+
+
+.right>div {
+    /* float: left; */
+    width: 234px;
+    height: 300px;
+    background-color: white;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+
+.right div:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+}
+
+.right div img {
+    width: 100%;
+    height: 120px;
+}
+
+.review {
+    height: 70px;
+    font-size: 14px;
+    padding: 0 14px;
+    margin-top: 14px;
+}
+
+.appraise {
+    font-size: 12px;
+    color: gray;
+    /* margin-top: 12px; */
+    padding: 0 14px;
+}
+
+.info {
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 0 14px;
+}
+
+.info em {
+    font-style: normal;
+    color: gray;
+    margin-left: 20px;
+    margin-right: 7px;
+
+}
+
+.info h4 {
+    display: inline-block;
+    font-weight: 400;
+}
+
+.info span {
+    color: orangered;
+}
+
+#activityBook12,
+#pictureBook12,
+#activityBook23,
+#pictureBook23,
+#pictureBook34,
+#activityBook34 {
+    float: left;
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+    width: 1020px;
+    /* height: 615px; */
+    background-color: #f5f5f5;
+}
+
+#pictureBook12>div,
+#activityBook12>div,
+#activityBook23>div,
+#pictureBook23>div,
+#pictureBook34>div,
+#activityBook34>div {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 100px;
+    background-color: lightgrey;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+
+
+
+#pictureBook12 img,
+#activityBook12 img,
+#activityBook23 img,
+#pictureBook23 img,
+#pictureBook34 img,
+#activityBook34 img {
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+#pictureBook12 p,
+#activityBook12 p,
+#activityBook23 p,
+#pictureBook23 p,
+#pictureBook34 p,
+#activityBook34 p {
+    text-align: center;
+    /* 文本居中 */
+    font-family: Arial, sans-serif;
+    /* 设置字体 */
+    font-size: 16px;
+    /* 设置字号 */
+    font-weight: bold;
+    /* 设置加粗 */
+    color: gray;
+}
+
+menu {
+    list-style-type: none;
+
+}
+
+li:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+}
+
+#bottom {
+    width: 100%;
+    height: 90px;
+    background-color: cadetblue;
+    margin: 10px auto;
+}
+
+#mainmenu {
+    grid-area: menubar;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+#mainmenu>li {
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 10px;
+}
+
+#mainmenu>li::before {
+    content: " | ";
+}
+
+#mainmenu>li:first-of-type::before {
+    content: "";
+}
+
+#mainmenu menu {
+    display: none;
+    background: #eee;
+    position: absolute;
+}
+
+#mainmenu>li:hover menu {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+
+#mainmenu>li menu li:hover {
+    background: #efe;
+}
+
+#mainmenu>li menu li a {
+    display: block;
+}
+
+@media screen and (min-width: 10000px) {}
+
+@media screen and (max-width: 600px) {
+    .box {
+        overflow: hidden;
+        width: 600px;
+        height: 430px;
+        margin: 10px auto;
+    }
+
+    .right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 五列布局 */
+        width: 600px;
+        /* height: 615px; */
+        background-color: #f5f5f5;
+    }
+}
+
+@media print {
+    a[href]::after {
+        content: ' (' attr(href) ')';
+    }
+}

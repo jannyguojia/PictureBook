@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top .bottom {
+            height: 150px;
+            background-color: bisque;
+        }
+
+        .top img {
+            width: 100%;
+            height: 150px;
+        }
+
+        .bottom {
+            background-color: rgb(137, 137, 213);
+            width: 100%;
+            height: 150px;
+        }
+
+        .bottom ul {
+            margin-top: 20px;
+            padding-top: 20px;
+            text-align: center;
+            /* 文本居中 */
+            font-family: Arial, sans-serif;
+            /* 设置字体 */
+            font-size: 22px;
+            /* 设置字号 */
+            font-weight: bold;
+            /* 设置加粗 */
+            color: white;
+            /* 设置字体颜色为白色 */
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .box {
+            overflow: hidden;
+            width: 1478px;
+            height: 1230px;
+            margin: 10px auto;
+        }
+
+        .left {
+            float: left;
+            width: 234px;
+            height: 920px;
+        }
+
+        .left img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .right {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            width: 1020px;
+        }
+
+        h1 {
+            margin-left: 300px;
+
+        }
+
+        .right>div {
+            display: flex;
+            align-items: center;
+            width: 1000px;
+            height: 150px;
+            background: linear-gradient(to bottom, #66f0ff, #ccffcc08);
+            margin-left: 14px;
+            margin-bottom: 14px;
+        }
+
+        .right div:last-child {
+            background-color: transparent;
+            /* 设置最后一个 div 的背景色为空（透明） */
+        }
+
+        .right img {
+            width: 120px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .right p {
+            text-align: center;
+            /* 文本居中 */
+            font-family: Arial, sans-serif;
+            /* 设置字体 */
+            font-size: 16px;
+            /* 设置字号 */
+            font-weight: bold;
+            /* 设置加粗 */
+            color: gray;
+        }
+
+        .lotofnews {
+            display: flex;
+
+            /* 使用 Flexbox 布局 */
+            justify-content: center;
+            /* 水平居中 */
+        }
+
+        .lotofnews>div {
+            float: left;
+
+        }
+
+        .lotofnews img {
+            height: 160px;
+            width: 160px;
+            margin-left: 10px;
+            padding-right: 20px;
+        }
+
+        .lotofnews p {
+            margin-top: -30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: rgba(22, 21, 21, 0.5);
+            width: 160px;
+            text-align: center;
+        }
+
+        .lotofnews a {
+            color: white;
+            text-decoration: none;
+            size: 15px;
+        }
+
+        menu {
+            list-style-type: none;
+
+        }
+
+        li:hover {
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+        }
+
+        #bottom {
+            width: 100%;
+            height: 90px;
+            background-color: cadetblue;
+            margin: 10px auto;
+        }
+
+        #mainmenu {
+            grid-area: menubar;
+            margin-bottom: 0;
+            padding: 10px;
+        }
+
+        #mainmenu>li {
+            background-color: #ffffff;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        #mainmenu>li::before {
+            content: " | ";
+        }
+
+        #mainmenu>li:first-of-type::before {
+            content: "";
+        }
+
+        #mainmenu menu {
+            display: none;
+            background: #eee;
+            position: absolute;
+        }
+
+        #mainmenu>li:hover menu {
+            display: block;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #mainmenu>li menu li:hover {
+            background: #efe;
+        }
+
+        #mainmenu>li menu li a {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <img src="img\top2.png" alt="">
+    </div>
+    <menu id="mainmenu">
+        <li>
+            <a href="pictureBookWebsite.php">Home</a>
+        </li>
+
+        </li>
+        <li id="comments">
+            <a href="comments.php">Comments</a>
+        </li>
+        <li>
+            <a href="selectbar.html">Connect Us</a>
+        </li>
+
+    </menu>
+    <div class="box">
+        <div class="left">
+            <a href="news.html"></a>
+        </div>
+        <div class="right">
+            <h1>100 best picture books of 2023</h1>
+
+            <h2>You voted in your thousands to tell us your favourite books on our list of the top 100 best
+                children's books from the last century.</h2>
+
+            <div>
+                <img src="img\news1.png" alt="">
+                <h3>The Very Hungry Caterpillar</h3>
+                <p>Little fingers will love to follow the very hungry caterpillar as he munches his way through the
+                    pages of
+                    this classic,
+                    colourful, interactive picture book.
+                </p>
+            </div>
+            <div>
+                <img src="img\news2.png" alt="">
+                <h3>Northern Lights</h3>
+                <p>This extraordinary fantasy is the first book in Philip Pullman's multi-award-winning His Dark
+                    Materials
+                    trilogy
+                </p>
+            </div>
+            <div>
+                <img src="img\news4.png" alt="">
+                <h3>The Hunger Games</h3>
+                <p>Welcome to Panem: its Capitol repressively rules twelve satellite Districts, enslaving the
+                    populations as
+                    workers and
+                    controlling them through hunger.
+                </p>
+            </div>
+            <div>
+                <img src="img\news5.png" alt="">
+                <h3>Harry Potter and the Philosopher's Stone</h3>
+                <p>After the misery of life with his ghastly aunt and uncle, Harry Potter is delighted to have the
+                    chance to
+                    embark on an
+                    exciting new life at the Hogwart's School of Wizardry and Witchcraft.
+                </p>
+            </div>
+
+            <div class="lotofnews">
+                <div class="new1">
+                    <img src="img\news3.png" alt="">
+                    <p class="review">
+                        <a href="#">Harry Potter</a>
+                    </p>
+                </div>
+                <div class="news2">
+                    <img src="img\news6.png" alt="">
+                    <p class="review">
+                        <a href="#">The Cat in the Hat</a>
+                    </p>
+                </div>
+                <div class="new3">
+                    <img src="img\news7.png" alt="">
+                    <p class="review">
+                        <a href="#">Winnie-the-Pooh</a>
+                    </p>
+                </div>
+                <div class="new4">
+                    <img src="img\news8.png" alt="">
+                    <p class="review">
+                        <a href="#">Charlotte's Web</a>
+                    </p>
+                </div>
+                <div class="new1">
+                    <img src="img\news3.png" alt="">
+                    <p class="review">
+                        <a href="#">Harry Potter</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="floatbox">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+            </ul>
+        </div> -->
+
+        <div class="bottom">
+            <ul>
+                <li>Made by JiaGuo</li>
+                <li>To my son and other kids</li>
+            </ul>
+        </div>
+
+</body>
+
+</html>
